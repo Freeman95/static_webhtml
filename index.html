@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1 , user-scalable=no">
+    <title>首页</title>
+    <link rel="stylesheet" href="https://cdn.staticfile.org/twitter-bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://cdn.staticfile.org/jquery/2.1.1/jquery.min.js"></script>
+    <script src="https://cdn.staticfile.org/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="./bootstrap/css/bootstrap-yanshi.css"/>
+</head>
+<body>
+<!--导航-->
+<nav class="navbar navbar-default navbar-fixed-top">
+    <div class="container">
+        <!--小屏幕导航按钮和logo-->
+        <div class="navbar-header">
+            <button class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a href="index.html" class="navbar-brand">个人网页展示</a>
+        </div>
+        <!--小屏幕导航按钮和logo-->
+        <!--导航-->
+        <div class="navbar-collapse collapse">
+            <ul class="nav navbar-nav navbar-right">
+                <li><a href="#home">首页</a></li>
+                <li><a href="#bbs">静态网页</a></li>
+                <li><a href="#html5">bootstrap</a></li>
+            </ul>
+        </div>
+        <!--导航-->
+
+    </div>
+</nav>
+<!--导航-->
+
+<!--home-->
+<section id="home">
+    <div class="lvjing">
+        <div class="container">
+            <div class="row wow fadeInUp" data-wow-duration="1s" data-wow-delay="1s">
+                <div class="col-md-1"></div>
+                <div class="col-md-10">
+                	<article>
+				      <header>
+				            <h1>个人网页展示</h1>
+				            <p>创建日期：<time pubdate="pubdate">2019/05/26</time></p>
+				      </header>
+				      <p>个人简介：</p>
+				      	<ul style="list-style-type:none">
+					      <li>曾经从事过半年软件开发，一周内熟悉陌生框架，并上手使用完成项目经理交付的任务，对业务熟悉；</li>
+					      <li>安徽师范大学毕业，计算机科学与技术转业，熟悉java、c、JavaScript等常用语言，熟悉常用软件包括ps等；</li>
+					      <li>熟悉基本电脑知识，包括电脑的维护，系统重装等；</li>
+					      <li>喜欢艺术，从小就对美术之类的特别感兴趣，有独特的审美观；</li>
+					      <li>适应性强，喜欢钻研思考；</li>
+				  		</ul>
+				      <footer>
+				           <p><small>当前日期：<span id="text"></span></samll></p>
+				      </footer>
+					</article>
+                </div>
+                <div class="col-md-1"></div>
+            </div>
+        </div>
+    </div>
+</section>
+<!--home-->
+
+<!--bbs-->
+<section id="bbs">
+    <div class="container">
+        <div class="row wow fadeInUp" data-wow-duration="0.5s">
+            <div class="col-md-4">
+                <a href="./staticWeb/360/360.html" target="_blank">
+                    <img src="images/stu.jpg" class="img-responsive" alt=""/>
+                    <h3>360单页面</h3>
+                    <p>根据UI图片，自行网页编写（ps切片、html、css）</p>
+                </a>
+            </div>
+            <div class="col-md-4">
+                <a href="./staticWeb/uc/download.html" target="_blank">
+                    <img src="images/par.jpg" class="img-responsive" alt=""/>
+                    <h3>uc单网页</h3>
+                    <p>根据UI图片，自行网页编写（ps切片、html、css）</p>
+                </a>
+            </div>
+            <div class="col-md-4">
+                <a href="./staticWeb/responsive/responsive.html" target="_blank">
+                    <img src="images/tec.jpg" class="img-responsive" alt=""/>
+                    <h3>婚庆主题单页面</h3>
+                    <p>根据UI图片，自行网页编写（ps切片、html、css）</p>
+                </a>
+            </div>
+        </div>
+    </div>
+</section>
+<!--bbs-->
+
+<!--html5-->
+<section id="html5">
+    <div class="container">
+        <div class="col-md-6 wow fadeInLeft">
+            <h2>Bootstrap网页系类</h2>
+            <p>简介：面向教育的小型网页，包换主网页以及纯JavaScript写的购物车</p>
+            <p><span class="glyphicon glyphicon-grain mai-icon"></span><a href="./bootstrap/bootstrap.html">主网页</a></p>
+            <p><span class="glyphicon glyphicon-grain mai-icon"></span><a href="./bootstrap/html/goforshopping.html">购物车</a></p>
+        </div>
+        <div class="col-md-6 wow fadeInRight">
+            <img src="images/shipin.jpg" class="img-responsive" alt=""/>
+        </div>
+    </div>
+</section>
+<!--html5-->
+
+<!--footer-->
+<footer>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <p>
+                    Copyright&nbsp;©&nbsp;2018-2020&nbsp;&nbsp;www.xiaorui.com&nbsp;&nbsp;皖ICP证123456789号
+                </p>
+            </div>
+        </div>
+    </div>
+</footer>
+<!--footer-->
+
+</body>
+<script type="text/javascript">
+    setInterval(on,1000); 
+    function on() {
+        var date1 =new Date;
+        var  year=date1.getFullYear();
+        var  month=date1.getMonth();
+        var day=date1.getDate();
+        var xinqi=date1.getDay();
+        var hh=date1.getHours();
+        var mm=date1.getMinutes();
+        var ss=date1.getSeconds();
+        var time=year+"年"+(month+1)+"月"+day+"日   星期"+xinqi+"  "+hh+":"+mm+":"+ss;
+        document.getElementById("text").innerHTML = time;
+    }
+
+</script>
+</html>

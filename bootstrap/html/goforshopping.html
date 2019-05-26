@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>购物车</title>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="https://cdn.staticfile.org/twitter-bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://cdn.staticfile.org/jquery/2.1.1/jquery.min.js"></script>
+    <script src="https://cdn.staticfile.org/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="../css/goforshopping.css"/>
+    <script type="text/javascript" src="../js/jquery-1.11.1.js" ></script>
+    <script type="text/javascript" src="../js/goforshopping.js" ></script>
+  </head>
+  <body>
+    <nav class="navbar navbar-default navbar-fixed-top">
+    <div class="container">
+        <!--小屏幕导航按钮和logo-->
+        <div class="navbar-header">
+            <button class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a href="../index.html" class="navbar-brand">小锐教育</a>
+        </div>
+        <!--小屏幕导航按钮和logo-->
+        <!--导航-->
+        <div class="navbar-collapse collapse">
+            <ul class="nav navbar-nav navbar-right">
+                <li><a href="../index.html">首页</a></li>
+                <li><a href="../index.html">论坛</a></li>
+                <li><a href="../index.html">视频照片</a></li>
+                <li><a href="../index.html">最新课程</a></li>
+                <li><a href="../index.html">移动APP</a></li>
+                <li><a href="../index.html">联系我们</a></li>
+            </ul>
+        </div>
+        <!--导航-->
+
+    </div>
+</nav>
+<!--导航-->
+    
+    <div id="main">
+      <div class="main_inner pre-scrollable">
+        <h1 >课程设计</h1>
+        <table class='table table-condensed'>
+          <tr>
+            <th>课程</th>
+            <th>价格/小时</th>
+            <th>讲师</th>
+            <th>总课时</th>
+            <th>好评率</th>
+            <th>操作</th>
+          </tr>   
+          <tr>
+            <td>语文</td>
+            <td>80</td>
+            <td>小赵</td>
+            <td>1893</td>
+            <td>98%</td>
+            <td align="center">
+              <input class="button" type="button" value="加入我们" onclick="add_shoppingcart(this);"/>
+            </td>
+          </tr>
+          <tr>
+            <td>数学</td>
+            <td>80</td>
+            <td>小钱</td>
+            <td>4028</td>
+            <td>96%</td>
+            <td align="center">
+              <input class="button" type="button" value="加入我们" onclick="add_shoppingcart(this);"/>
+            </td>
+          </tr>
+          <tr>
+            <td>外语</td>
+            <td>100</td>
+            <td>小孙</td>
+            <td>6782</td>
+            <td>99%</td>
+            <td align="center">
+              <input class="button" type="button" value="加入我们" onclick="add_shoppingcart(this);"/>
+            </td>
+          </tr>
+          <tr>
+            <td>物理</td>
+            <td>80</td>
+            <td>小李</td>
+            <td>5937</td>
+            <td>96%</td>
+            <td align="center">
+              <input class="button" type="button" value="加入我们" onclick="add_shoppingcart(this);"/>
+            </td>
+          </tr>
+          <tr>
+            <td>化学</td>
+            <td>80</td>
+            <td>小周</td>
+            <td>5482</td>
+            <td>98%</td>
+            <td align="center">
+              <input class="button" type="button" value="加入我们" onclick="add_shoppingcart(this);"/>
+            </td>
+          </tr>
+        </table>
+      
+        <h1>课程总金额</h1>
+        <table class='table table-condensed'>
+          <thead>
+            <tr>
+              <th>课程</th>
+              <th>价格/小时</th>
+              <th>总课时</th>
+              <th>金额(元)</th>
+              <th>删除</th>
+            </tr>
+          </thead>
+          <tbody id="goods">
+           
+          </tbody>
+          <tfoot>
+            <tr>
+              <td colspan="3" align="right">总计</td>
+              <td id="total">0</td>
+              <td align="center">
+                <input class="button" type="button" value="提交" onclick="go_for_add(this);"/>
+              </td>
+            </tr>
+          </tfoot>
+        </table>
+      </div>
+    </div>
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <p>
+                        Copyright&nbsp;©&nbsp;2018-2020&nbsp;&nbsp;www.xiaorui.com&nbsp;&nbsp;皖ICP证123456789号
+                    </p>
+                </div>
+            </div>
+        </div>
+    </footer>
+  </body>
+</html>
